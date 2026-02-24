@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Smart Interview System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🤖 AI Powered Smart Interview System</h1>
+
+<!-- LOGIN -->
+<div id="loginPage">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter Username">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="login()">Login</button>
+    <p id="loginError"></p>
+</div>
+
+<!-- MAIN -->
+<div id="mainPage">
+
+    <!-- AI Animation -->
+ <div class="ai-smiley">
+    <div class="face">
+        <div class="eyes">
+            <div class="eye left-eye"></div>
+            <div class="eye right-eye"></div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+</div>
+
+    <h2>Select Qualification & Skill</h2>
+
+    <select id="qualification">
+        <option value="">Choose Qualification</option>
+        <option>B.E CSE</option>
+        <option>B.Tech IT</option>
+        <option>BCA</option>
+        <option>BSc CS</option>
+        <option>BSc AI & DS</option>
+        <option>BSc CS & AI DS</option>
+    </select>
+
+    <select id="skill">
+        <option value="">Choose Skill</option>
+        <option>Java</option>
+        <option>Python</option>
+        <option>DBMS</option>
+        <option>Web Development</option>
+    </select>
+
+    <button onclick="startInterview()">Start Interview</button>
+
+    <div id="questionsContainer"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
